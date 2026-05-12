@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Proyecto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Mini Proyecto con GitHub Pages</h1>
+    <p>Este sitio fue preparado para publicarse automáticamente con GitHub Actions.</p>
+    <button id="btn">Haz clic</button>
+    <p id="mensaje"></p>
+  </main>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const mensaje = document.getElementById('mensaje');
+
+    btn.addEventListener('click', () => {
+      mensaje.textContent = '¡Proyecto iniciado correctamente!';
+    });
+  </script>
+</body>
+</html>
